@@ -1,0 +1,50 @@
+[
+    {
+        "id": "bd33e405374d8603",
+        "type": "mqtt in",
+        "z": "2037fdb5e194e496",
+        "name": "Receber Umidade",
+        "topic": "carbontrack/umidade",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt-broker-hivemq",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "6e8c0ea4070615b4"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt-broker-hivemq",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Público",
+        "broker": "3f3a91da234e4351bfbad9f9e86a145c.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "carbontrack-nodered-001",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
